@@ -4,23 +4,23 @@
 
     /* ----------------------Desktop 미디어쿼리------------------------------ */
     @media only screen and (min-width: 2000px) { 
-
 }
 
    /* ------------------------------------------------------------- */
-.header {
+header {
     width: 100%;
     height: 1vw;
     top: 0;
     padding: 2vw;
-    background-color: rgba(0, 0, 0, 0.678);
+    background-color: rgba(255, 255, 255, 0.678);
     position: fixed;
 }
 
-.header > a {
+header > a {
     font-size: 1vw;
     font-weight: 600;
-    color: white;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 .header > a :hover {
@@ -35,10 +35,11 @@
 }
 
 body {
-    background-color: black;
-    font-family: "Pretendard"; 
+    width: 100%;
+    height: 500vw;
     overflow-x: hidden;
-    overflow-y: auto;
+    background-color: white;
+    font-family: "Pretendard"; 
     -webkit-animation: fadein 2.5s;
 }
 
@@ -75,4 +76,34 @@ body {
 
 .space6 {
     height: 20vw;
+}
+/* ------------------------ */
+.intro-logo {
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    margin: auto;
+    margin-top: 15vw;
+    text-align: center;
+    font-size: 5vw;
+    font-weight: 800;
+}
+
+h2 {
+    margin: auto;
+    margin-top: 1vw;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 600;
+}
+
+.intro-img {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
 }
