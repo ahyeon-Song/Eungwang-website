@@ -4,6 +4,11 @@
 
     /* ----------------------Desktop 미디어쿼리------------------------------ */
     @media only screen and (min-width: 2000px) { 
+        .intro-img {
+            margin-left: 8.5vw;
+            zoom: 1.3;
+        }
+
 }
 
    /* ------------------------------------------------------------- */
@@ -39,7 +44,7 @@ body {
     height: 500vw;
     overflow-x: hidden;
     background-color: white;
-    font-family: "Pretendard"; 
+    font-family: "Pretendard";
     -webkit-animation: fadein 2.5s;
 }
 
@@ -55,7 +60,7 @@ body {
 }
 
 .space1 {
-    height: 5vw;
+    height: 3vw;
 }
 
 .space2 {
@@ -102,8 +107,136 @@ h2 {
 .intro-img {
     width: 100%;
     height: auto;
+    display: flex;
+}
+
+img {
+    image-rendering: optimizeSpeed;
+}
+
+img-1, img-2, img-3, img-4 {
+    filter: drop-shadow(15px 15px 8px #00000025);
+}
+
+img-1 {
+    margin-top: -300px;
+    margin-left: -200px;
+}
+
+img-2, img-3 {
+margin-left: 250px;
+}
+
+img-4 {
+    margin-top: -300px;
+    margin-left: 200px;
+}
+
+.summary {
+    max-width: 1000px;
     margin: auto;
     text-align: center;
-    display: flex;
-    justify-content: space-around;
 }
+
+summary-text-1 {
+    font-size: 5vw;
+    font-weight: 800;
+    background: -webkit-linear-gradient(left bottom, #65e900, #25ec78);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+summary-text-2 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #6e6e6e;
+}
+
+summary-text-3 {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: #000000;
+}
+
+.summary-box-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.summary-box {
+    width: 280px;
+    height: 50px;
+    text-align: left;
+    border-radius: 10px;
+    filter: drop-shadow(8px 8px 8px #00000025);
+    background-color: #ffffff;
+}
+
+.about-video {
+    width: 100%;
+    border-radius: 0.7vw;
+    margin: auto;
+    margin-top: 10vw;
+    filter: brightness(55%);
+}
+
+.about-text {
+    max-width: 58vw;
+    margin: auto;
+    font-size: 2.5vw;
+    font-weight: 600;
+    text-align: center;
+    line-height: 4.1vw;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%,-280%);
+}
+
+.about-text2 {
+    width: auto;
+    margin: auto;
+    margin-top: -10vw;
+    font-size: 2.5vw;
+    font-weight: 700;
+    text-align: center;
+    color: black;
+}
+
+.about-slide {
+    max-width: 1400px;
+    display: flex;
+    margin: auto;
+    margin-top: 5vw;
+    justify-content: space-between;
+    animation: side 2s infinite ease-in-out alternate;
+}
+
+@keyframes side{
+    from{
+      transform: translatey(0px);
+    }
+    to{
+      transform: translatey(-30px);
+    }
+  }
+
+  .about-slide > img {
+      margin-left: 15px;
+      border-radius: 5px;
+      image-rendering: optimizeSpeed;
+  }
+
+  .imweb-wrap {
+      width: 100%;
+      height: 800px;
+      background-color: #f8f8f8;
+      margin-top: 7vw;
+  }
+
+  .imweb-text1 {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+  }
