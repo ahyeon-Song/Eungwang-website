@@ -7,7 +7,7 @@
 }
 
    /* ------------------------------------------------------------- */
-   
+   @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
    /* -------- spaces ------- */
 .space {
     height: 1vw;
@@ -44,6 +44,7 @@
 body {
     width: 100%;
     height: auto;
+    font-family: 'Pretendard';
     overflow-x: hidden;
     background-color: white;
     -webkit-animation: fadein 2.5s;
@@ -103,23 +104,22 @@ summary-section3-text {
 /* == about == */
 
 .about-wrap {
-    width: 100%;
+    width: auto;
     margin: auto;
-    overflow: auto;
+    margin-top: 6vw;
 }
 
 .about-video {
-    width: 100%;
-    filter: brightness(40%);
-    position: relative;
-    object-fit: cover;
+    filter: brightness(30%);
+    position: absolute;
+    left: 0%;
 }
 
 .about-texts {
     max-width: 38vw;
     color: white;
-    /* padding: 20% 10%; */
-    position: absolute;
+    padding: 20% 10%;
+    position: relative;
 }
 
 .about-text-h {
@@ -144,14 +144,17 @@ summary-section3-text {
     transition: 0.15s ease-in-out;
 }
 
+
+/* == imweb == */
 .imweb-wrap {
-    width: 100%;
+    width: auto;
     margin: auto;
+    left: 0;
 }
 
 .imweb-bg {
-    left: 0;
-    margin: 0;
+    width: 100%;
+    left: 0%;
 }
 
 imweb-why {
@@ -163,12 +166,9 @@ imweb-why {
     color: rgb(255, 255, 255);
 }
 
-.imweb-reason {
+.imweb-reason-wrap{
     width: 65%;
     margin: auto;
-    color: black;
-    margin-top: 25px;
-    
 }
 
 .imweb-reason-h {
@@ -183,6 +183,128 @@ imweb-why {
     margin-top: 25px;
 }
 
+
+/* == concept == */
+.concept-wrap {
+    width: 100%;
+    margin: auto;
+    margin-top: 6vw;
+}
+
 .concept-bg {
-    zoom: 1.2;
+    position: absolute;
+    left: 0;
+}
+
+.concept-text-wrap {
+    width: 600px;
+    position: relative;
+    padding-left: 200px;
+    padding-top: 25%;
+}
+
+concept-h {
+    font-size: 3.5vw;
+    font-weight: 900;
+    background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+concept-b {
+    font-size: 1.2vw;
+    width: 550px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+.concept-2-wrap {
+    width: 100%;
+    height: 1500px;
+    margin: auto;
+    left: 0;
+    position: absolute;
+    margin-top: 20%;
+    background-color: black;
+    z-index: 1;
+
+}
+
+.typograpy-wrap, .colors-wrap, .navi-bar-wrap {
+    width: 73vw;
+    margin: auto;
+    padding-top: 5vw;
+    margin-top: 3.47vw;
+}
+
+concept-2-h {
+    font-size: 1.5vw;
+    font-weight: 900;
+    background: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.typography-img {
+    margin-top: 3vw;
+}
+
+.color-box-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 35vw;
+}
+
+.color-box-white, .color-box-green, .color-box-gray, .color-box-black {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    margin-top: 1.5vw;
+}
+
+.color-box-white {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    margin-top: 1.5vw;
+    background-color: aliceblue;
+}
+
+.color-box-green {
+    background-color: #6eff00;
+}
+
+.color-box-gray {
+    background-color: #363636;
+}
+
+.color-box-black {
+    background-color: #000000;
+    border: 0.5px solid white;
+}
+
+.color-name {
+    color: white;
+    padding-top: 1.38vw;
+    font-size: 1.04vw;
+}
+
+.navi-bar-wrap, .wireframe-wrap {
+    text-align: center;
+    margin-top: 8vw;
+}
+
+.navi-bar-img{
+    margin-top: 2vw;
+}
+
+wireframe-whitetext {
+    font-size: 0.9vw;
+    color: white;
+}
+
+.wireframe-img {
+    margin-top: 104vw;
+    z-index: 1;
+    position: relative;
 }
