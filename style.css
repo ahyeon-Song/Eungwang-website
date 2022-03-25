@@ -77,11 +77,61 @@ body {
     to   { opacity: 1; }
 }
 
+/* == intro == */
+.intro-wrap {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20.8vw;
+}
+
+.intro-img {
+}
+
+.intro-text {
+    width: 100%;
+    font-size: 4vw;
+    margin: auto;
+    font-weight: 800;
+    color: black;
+    -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-contract {
+    0% {
+      letter-spacing: 1em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      letter-spacing: normal;
+      opacity: 1;
+    }
+  }
+
+  
 /* === summary === */
 .summary-wrap {
     width: 55.5vw;
     height: auto;
     margin: auto;
+    margin-top: 20.8vw;
 }
 
 .summary-section1 {
@@ -175,7 +225,7 @@ summary-section3-text {
 
 .imweb-bg {
     width: 100%;
-    left: 0%;
+    left: -20%;
 }
 
 imweb-why {
@@ -245,17 +295,22 @@ concept-b {
     margin: auto;
     left: 0;
     position: absolute;
-    margin-top: 20%;
+    margin-top: 15%;
     background-color: black;
     z-index: 1;
 
 }
 
-.typograpy-wrap, .colors-wrap, .navi-bar-wrap {
+.typocolor-wrap, .navi-bar-wrap {
     width: 73vw;
     margin: auto;
     padding-top: 5vw;
     margin-top: 3.47vw;
+}
+
+.typocolor-wrap {
+    display: flex;
+    justify-content: space-between;
 }
 
 concept-2-h {
@@ -273,14 +328,15 @@ concept-2-h {
 .color-box-wrap {
     display: flex;
     justify-content: space-between;
-    width: 35vw;
+    width: 30vw;
 }
 
 .color-box-white, .color-box-green, .color-box-gray, .color-box-black {
     width: 4.16vw;
     height: 4.16vw;
     border-radius: 20%;
-    margin-top: 1.5vw;
+    margin-top: 3.5vw;
+    zoom: 0.8;
 }
 
 .color-box-white {
@@ -321,7 +377,7 @@ wireframe-whitetext {
 }
 
 .wireframe-img {
-    margin-top: 100vw;
+    margin-top: 82vw;
     z-index: 1;
     position: relative;
 }
@@ -375,7 +431,24 @@ h2 {
     }
   }
 
+/* ==problem== */
+.problem-wrap {
+    max-width: 55vw;
+    margin-left: 7vw;
+}
 
+problme-h {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+problem-b {
+    font-weight: 500;
+    font-size: 1.11vw;
+}
+
+
+/* ==traffic== */
 .traffic-wrap {
     width: 100%;
     margin: auto;
@@ -388,9 +461,10 @@ h2 {
 }
 
 traffic-text-b {
-    max-width: 55vw;
+    max-width: 70vw;
     margin-left: 7vw;
-    line-height: 3vw;
+    margin-top: -3vw;
+    line-height: 2.5vw;
     font-weight: 500;
     font-size: 1.11vw;
     color: black;
