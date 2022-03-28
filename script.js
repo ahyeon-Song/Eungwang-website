@@ -12,4 +12,11 @@ gsap.to(".intro-wrap", {
       toggleActions: 'play none none none',
     },
     opacity:0,
+    scale: 0.8
   }); 
+
+  
+const hoverAnimation = document.querySelector('a');
+hoverAnimation.addEventListener('onmouseover', ()=> {
+  console.log("okay")
+});

@@ -4,6 +4,17 @@
 
     /* ----------------------Desktop 미디어쿼리------------------------------ */
     @media only screen and (min-width: 2000px) { 
+
+        .summary-section2 > img {
+            width: 80px
+        }
+        
+        body summary-section2-text {
+            max-width: 40vw;
+            margin-left: 3vw;
+            font-weight: 600;
+        }
+
 }
 
    /* ------------------------------------------------------------- */
@@ -61,6 +72,13 @@
     z-index: 1;
 }
 
+.top-button {
+    position: fixed;
+    bottom: 1vw;
+    right: 1.7vw;
+    z-index: 20;
+}
+
 
 body {
     width: 100%;
@@ -82,7 +100,6 @@ body {
     width: 100%;
     margin: auto;
     text-align: center;
-    margin-top: 20.8vw;
 }
 
 .intro-img {
@@ -94,6 +111,7 @@ body {
     margin: auto;
     font-weight: 800;
     color: black;
+    margin-top: 20%;
     -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
     animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
@@ -131,7 +149,7 @@ body {
     width: 55.5vw;
     height: auto;
     margin: auto;
-    margin-top: 20.8vw;
+    margin-top: 15%;
 }
 
 .summary-section1 {
@@ -177,7 +195,7 @@ summary-section3-text {
 .about-wrap {
     width: auto;
     margin: auto;
-    margin-top: 6vw;
+    margin-top: 10vw;
 }
 
 .about-video {
@@ -254,6 +272,16 @@ imweb-why {
     margin-top: 1.73vw;
 }
 
+/* 위아래 animation keyframes */
+@keyframes updown{
+    from{
+      transform: translatey(0px);
+    }
+    to{
+      transform: translatey(-12px);
+    }
+  }
+
 
 /* == concept == */
 .concept-wrap {
@@ -265,13 +293,14 @@ imweb-why {
 .concept-bg {
     position: absolute;
     left: 0;
+    animation: updown 2s infinite ease-in-out alternate;
 }
 
 .concept-text-wrap {
     width: 41.66vw;
     position: relative;
     padding-left: 13.8vw;
-    padding-top: 25%;
+    padding-top: 21%;
 }
 
 concept-h {
@@ -286,6 +315,7 @@ concept-b {
     font-size: 1.2vw;
     width: 38vw;
     font-weight: 400;
+    line-height: 2.08vw;
     color: rgb(255, 255, 255);
 }
 
@@ -377,7 +407,7 @@ wireframe-whitetext {
 }
 
 .wireframe-img {
-    margin-top: 75vw;
+    margin-top: 78vw;
     z-index: 1;
     position: relative;
 }
@@ -390,16 +420,69 @@ wireframe-whitetext {
     text-align: center;
     margin: auto;
     margin-top: 9.7vw;
+    -webkit-animation: pulsate-bck 2.5s ease-in-out infinite both;
+    animation: pulsate-bck 2.5s ease-in-out infinite both;
+}
+
+.design-text > a {
     text-decoration: none;
-    color: #000000;
+    color: black;
 }
 
 .design-text:hover {
     opacity: 50%;
+    transition: 0.2s ease-in-out;
 }
-
-/* ==traffic== */
-traffic-text-h, h2 {
+  
+@-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
+  /* ==problem== */
+  .problem-wrap {
+      max-width: 55vw;
+      margin-left: 7vw;
+      margin-top: 20vw;
+  }
+  
+  problme-h {
+      font-size: 1.38vw;
+      font-weight: 800;
+  }
+  
+  problem-b {
+      font-weight: 500;
+      font-size: 1.11vw;
+      line-height: 2vw;
+  }
+  
+  /* ==traffic== */
+  traffic-text-h, h2 {
     max-width: 55vw;
     display: flex;
     align-items: baseline;
@@ -476,21 +559,46 @@ h2 {
     }
   }
 
-/* ==problem== */
-.problem-wrap {
-    max-width: 55vw;
-    margin-left: 7vw;
-    margin-top: 20vw;
+  /* ---reviews--- */
+.review-wrap {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin: auto;
+    margin-top: 12vw;
 }
 
-problme-h {
+.review-h {
+    text-align: center;
+}
+
+review-h-1 {
     font-size: 1.38vw;
     font-weight: 800;
+    color: black;
 }
 
-problem-b {
-    font-weight: 500;
+review-h-2 {
     font-size: 1.11vw;
-    line-height: 2vw;
+    font-weight: 500;
+    color: rgb(80, 80, 80);
 }
+
+.review-box-wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+}
+
+.review-box {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    border:2px solid rgb(0, 255, 149);
+    background-color: #ffffff;
+    font-size: 15px;
+    padding: 20px;
+}
+
+
 
