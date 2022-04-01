@@ -1,3 +1,5 @@
+AOS.init(); 
+
 // Preview img
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,8 +17,23 @@ gsap.to(".intro-wrap", {
     scale: 0.8
   }); 
 
-  
-const hoverAnimation = document.querySelector('a');
-hoverAnimation.addEventListener('onmouseover', ()=> {
-  console.log("okay")
-});
+
+  gsap.to(".design-text", {
+    scrollTrigger: {
+      trigger: '.indicator',
+      start: 'top center',
+      end: 'center center',
+      scrub: 1,
+      pin: true,
+      pinSpacing: true,
+      toggleActions: 'play none none none',
+    },
+    scale: 3
+  }); 
+
+
+  document.getElementById('.about-video').play();
+
+
+
+

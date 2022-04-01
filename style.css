@@ -257,6 +257,7 @@ imweb-why {
 
 .imweb-reason-wrap{
     width: 65%;
+    height: 40vw;
     margin: auto;
 }
 
@@ -401,15 +402,20 @@ concept-2-h {
     margin-top: 2vw;
 }
 
+.wireframe-wrap {
+    width: 100%;
+}
+
 wireframe-whitetext {
     font-size: 0.9vw;
     color: white;
 }
 
 .wireframe-img {
-    margin-top: 78vw;
+    margin-top: 90vw;
     z-index: 1;
     position: relative;
+    text-align: center;
 }
 
 /* == design == */
@@ -419,9 +425,9 @@ wireframe-whitetext {
     font-weight: 800;
     text-align: center;
     margin: auto;
-    margin-top: 9.7vw;
-    -webkit-animation: pulsate-bck 2.5s ease-in-out infinite both;
-    animation: pulsate-bck 2.5s ease-in-out infinite both;
+    margin-top: 16vw;
+    /* -webkit-animation: pulsate-bck 2.5s ease-in-out infinite both;
+    animation: pulsate-bck 2.5s ease-in-out infinite both; */
 }
 
 .design-text > a {
@@ -430,11 +436,12 @@ wireframe-whitetext {
 }
 
 .design-text:hover {
-    opacity: 50%;
+    text-decoration: underline;
+    text-underline-position:under;
     transition: 0.2s ease-in-out;
 }
   
-@-webkit-keyframes pulsate-bck {
+/* @-webkit-keyframes pulsate-bck {
     0% {
       -webkit-transform: scale(1);
               transform: scale(1);
@@ -461,13 +468,13 @@ wireframe-whitetext {
       -webkit-transform: scale(1);
               transform: scale(1);
     }
-  }
+  } */
   
   /* ==problem== */
   .problem-wrap {
       max-width: 55vw;
       margin-left: 7vw;
-      margin-top: 20vw;
+      margin-top: 23vw;
   }
   
   problme-h {
@@ -486,12 +493,13 @@ wireframe-whitetext {
     max-width: 55vw;
     display: flex;
     align-items: baseline;
+    margin-left: 7vw;
+    margin-top: 7vw;
 }
 
 traffic-text-h {
     font-size: 1.4vw;
     font-weight: 800;
-    margin-left: 7vw;
 }
 
 .traffic-wrap {
@@ -501,9 +509,9 @@ traffic-text-h {
 }
 
 .traffic-img {
-    margin-left: 45vw;
+    margin-left: 35vw;
     position: absolute;
-    margin-top: -4vw;
+    margin-top: -8vw;
 }
 
 traffic-text-h{
@@ -565,7 +573,7 @@ h2 {
     height: auto;
     background-color: white;
     margin: auto;
-    margin-top: 12vw;
+    margin-top: 10vw;
 }
 
 .review-h {
@@ -587,17 +595,19 @@ review-h-2 {
 .review-box-wrap {
     display: flex;
     justify-content: space-around;
-    margin-top: 70px;
+    margin-top: 4.86vw;
 }
 
 .review-box {
-    width: 200px;
+    width: 11vw;
     height: auto;
     border-radius: 10px;
     border:2px solid rgb(0, 255, 149);
     background-color: #ffffff;
     font-size: 15px;
-    padding: 20px;
+    font-weight: 500;
+    line-height: 1.5vw;
+    padding: 1.74vw;
 }
 
 
